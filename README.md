@@ -1,2 +1,2 @@
-# PracticaProgramada1
-Practica programada 1
+# PracticasProgramadas
+Practicas programadas
