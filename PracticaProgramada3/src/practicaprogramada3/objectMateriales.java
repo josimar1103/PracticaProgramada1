@@ -1,5 +1,7 @@
 package practicaprogramada3;
 
+import javax.swing.JOptionPane;
+
 public class objectMateriales {
 
     public String libros;
@@ -8,19 +10,36 @@ public class objectMateriales {
     public String tipoCuaderno;
     public String programas;
 
-    public static void libros() {
+    public void agregarMateriales() {
+        libros = JOptionPane.showInputDialog("Ingrese el nombre del libro:");
+
+        String cantidadLapicesLectura = JOptionPane.showInputDialog("Ingrese la cantidad de lapices:");
+        cantidadLapices = Integer.parseInt(cantidadLapicesLectura);
+
+        tipoLapices = JOptionPane.showInputDialog("Ingrese el tipo de lapices:");
+
+        tipoCuaderno = JOptionPane.showInputDialog("Ingrese el tipo de cuaderno:");
+
+        programas = JOptionPane.showInputDialog("Ingrese el programa a utilizar:");
 
     }
 
-    public static void materialEscritura() {
+    public void mostrarMateriales() {
+        JOptionPane.showInternalMessageDialog(null, "El libro a utilizar es:" + libros);
+        JOptionPane.showInternalMessageDialog(null, "El tipo de lapices a utilizar son:" + tipoLapices);
+        JOptionPane.showInternalMessageDialog(null, "El tipo de cuaderno a utilizar es:" + tipoCuaderno);
+        JOptionPane.showInternalMessageDialog(null, "El programa a utilizar es:" + programas);
+    }
+
+    public void materialEscritura() {
 
     }
 
-    public static void tipoCuadernos() {
+    public void tipoCuadernos() {
 
     }
 
-    public static void programas() {
+    public void programas() {
 
     }
 

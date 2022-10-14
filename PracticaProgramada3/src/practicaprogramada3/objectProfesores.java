@@ -4,48 +4,58 @@ import javax.swing.JOptionPane;
 
 public class objectProfesores {
 
-    public String nombreProfesor;
-    public int edadProfesor = 0;
+    public String nombreProf;
+    public int edadProf = 0;
     public String especialidad;
-    public String genero;
-    public int cedulaProfesor = 0;
-    public String direccion;
+    public String generoProf;
+    public int cedulaProf = 0;
+    public String direccionProf;
     public int salario;
     public int horario;
-    public String nacionalidad;
-    public int fechaNacimiento;
-    public int telefono;
-    
-    public void prueba(){
-        
-    }
+    public String nacionalidadProf;
+    public int fechaNacimientoProf;
+    public int telefonoProf;
 
-    public static void agregarProfesor() {
+    public void agregarProfesor() {
 
-        nombreProfesor = JOptionPane.showInputDialog("Ingrese el nombre del profesor:");
+        nombreProf = JOptionPane.showInputDialog("Ingrese el nombre del profesor:");
 
-        String edadProfesorLectura = JOptionPane.showInputDialog("Ingrese la edad:");
-        edadProfesor = Integer.parseInt(edadProfesorLectura);
+        String cedulaProfLectura = JOptionPane.showInputDialog("Ingrese la cédula:");
+        cedulaProf = Integer.parseInt(cedulaProfLectura);
+
+        String edadProfLectura = JOptionPane.showInputDialog("Ingrese la edad:");
+        edadProf = Integer.parseInt(edadProfLectura);
+
+        generoProf = JOptionPane.showInputDialog("Ingrese el genero:");
+
+        String fechaNacimientoProfLectura = JOptionPane.showInputDialog("Ingrese la fecha de nacimeinto:");
+        fechaNacimientoProf = Integer.parseInt(fechaNacimientoProfLectura);
+
+        nacionalidadProf = JOptionPane.showInputDialog("Ingrese la nacionalidad:");
 
         especialidad = JOptionPane.showInputDialog("Ingrese la especialidad:");
 
-        genero = JOptionPane.showInputDialog("Ingrese el genero:");
+        direccionProf = JOptionPane.showInputDialog("Ingrese la dirección:");
 
-        String cedulaProfesorLectura = JOptionPane.showInputDialog("Ingrese la cédula:");
-        cedulaProfesor = Integer.parseInt(cedulaProfesorLectura);
-
-        direccion = JOptionPane.showInputDialog("Ingrese la dirección:");
+        String telefonoProfLectura = JOptionPane.showInputDialog("Ingrese telefono:");
+        telefonoProf = Integer.parseInt(telefonoProfLectura);
 
         String salarioLectura = JOptionPane.showInputDialog("Ingrese el Salario:");
         salario = Integer.parseInt(salarioLectura);
 
-        nacionalidad = JOptionPane.showInputDialog("Ingrese la nacionalidad:");
+    }
 
-        String fechaNacimientoLectura = JOptionPane.showInputDialog("Ingrese la fecha de nacimeinto:");
-        fechaNacimiento = Integer.parseInt(fechaNacimientoLectura);
-
-        String telefonoLectura = JOptionPane.showInputDialog("Ingrese telefono:");
-        telefono = Integer.parseInt(telefonoLectura);
+    public void mostrarProfesor() {
+        JOptionPane.showInternalMessageDialog(null, "Nombre del Profesor:" + nombreProf);
+        JOptionPane.showInternalMessageDialog(null, "Cédula:" + cedulaProf);
+        JOptionPane.showInternalMessageDialog(null, "Edad:" + edadProf);
+        JOptionPane.showInternalMessageDialog(null, "Genero:" + generoProf);
+        JOptionPane.showInternalMessageDialog(null, "Fecha de nacimiento:" + fechaNacimientoProf);
+        JOptionPane.showInternalMessageDialog(null, "Nacionalidad:" + nacionalidadProf);
+        JOptionPane.showInternalMessageDialog(null, "Especialidad:" + especialidad);
+        JOptionPane.showInternalMessageDialog(null, "Dirección:" + direccionProf);
+        JOptionPane.showInternalMessageDialog(null, "Telefono:" + telefonoProf);
+        JOptionPane.showInternalMessageDialog(null, "Salario" + salario);
 
     }
 
